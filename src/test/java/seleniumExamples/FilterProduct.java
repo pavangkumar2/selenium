@@ -17,9 +17,9 @@ public class FilterProduct {
 	@Test
 	public void filterProduct() throws InterruptedException {
 		// for Mac OS
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver");
+		//System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/drivers/chromedriver");
 		// For Window OS
-		// System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "/drivers/chromedriver.exe");
+		 System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.get("https://www.olx.in/bangalore/");
 		driver.findElement(By.xpath(".//*[@id='cityField']")).click();
