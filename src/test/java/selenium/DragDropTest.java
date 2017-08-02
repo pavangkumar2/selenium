@@ -21,8 +21,10 @@ public class DragDropTest {
 			//for Mac OS
 			//System.setProperty("webdriver.firefox.marionette", System.getProperty("user.dir") + "/drivers/geckodriver");
 			// For Window OS
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/drivers/geckodriver.exe");
-			driver = new FirefoxDriver();
+			//System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") + "/drivers/geckodriver.exe");
+			//driver = new FirefoxDriver();
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir") + "/drivers/chromedriver.exe");
+			driver = new ChromeDriver();
 			
 
 		}
